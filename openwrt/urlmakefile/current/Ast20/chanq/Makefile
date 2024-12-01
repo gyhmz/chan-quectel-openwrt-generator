@@ -8,7 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=asterisk-chan-quectel
-PKG_VERSION:=master
+#PKG_VERSION:=master
+PKG_VERSION:=1
 PKG_RELEASE:=master
 
 PKG_SOURCE:=master.zip
