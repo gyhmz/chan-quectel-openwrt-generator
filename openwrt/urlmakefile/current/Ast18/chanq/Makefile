@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=asterisk-chan-quectel
-PKG_VERSION:=master
-PKG_RELEASE:=master
+PKG_VERSION:=3.6
+PKG_RELEASE:=3.6
 
 PKG_SOURCE:=master.zip
 PKG_SOURCE_URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel/archive/refs/heads/
@@ -24,7 +24,7 @@ PKG_MAINTAINER:=Jiri Slachta <jiri@slachta.eu>
 
 define Build/Prepare
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
-$(CP) ./src/* $(PKG_BUILD_DIR)/
+$(CP) ../asterisk-chan-quectel-master/src/* $(PKG_BUILD_DIR)/
 endef
 
 
