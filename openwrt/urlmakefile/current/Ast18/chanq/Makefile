@@ -24,7 +24,10 @@ PKG_MAINTAINER:=Jiri Slachta <jiri@slachta.eu>
 
 define Build/Prepare
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
-$(CP) ../asterisk-chan-quectel-master/src/* $(PKG_BUILD_DIR)/
+#$(CP) ./src/* $(PKG_BUILD_DIR)/
+$(CP) ./src/* $(PKG_BUILD_DIR)/../asterisk-chan-quectel-master
+ls -l
+pwd
 endef
 
 
