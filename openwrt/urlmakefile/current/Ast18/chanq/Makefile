@@ -14,9 +14,7 @@ PKG_RELEASE:=3.6
 PKG_SOURCE:=master.zip
 PKG_SOURCE_URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel/archive/refs/heads/
 PKG_CAT:=unzip
-pwd
-ls -l
-mv ./asterisk-chan-quectel-master ./asterisk-chan-quectel-$(PKG_VERSION)
+
 PKG_HASH:=skip
 
 PKG_FIXUP:=autoreconf
