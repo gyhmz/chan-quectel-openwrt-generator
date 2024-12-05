@@ -11,7 +11,7 @@ PKG_NAME:=asterisk-chan-quectel
 PKG_VERSION:=3.6
 #PKG_RELEASE:=master
 
-PKG_SOURCE:=3.6.zip
+PKG_SOURCE:=master.zip
 PKG_SOURCE_URL:=https://github.com/gyhnz/asterisk-chan-quectel/archive/refs/heads/
 PKG_CAT:=unzip
 PKG_HASH:=skip
@@ -23,7 +23,8 @@ PKG_LICENSE_FILES:=COPYRIGHT.txt LICENSE.txt
 PKG_MAINTAINER:=Jiri Slachta <jiri@slachta.eu>
 
 define Build/Prepare
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
+#PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-master/$(PKG_NAME)-$(PKG_VERSION)
 $(CP) ./src/* $(PKG_BUILD_DIR)/
 endef
 
