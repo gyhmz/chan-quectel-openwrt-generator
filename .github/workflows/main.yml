@@ -27,7 +27,7 @@ jobs:
           regex: '^.+openwrt-sdk-([\d]*).*?-([a-z,0-9]*)-.+$'        
       - name: set env variable
         run: echo "ver=$(basename ${{ github.event.inputs.astversion }})" >> $GITHUB_ENV
-      - name: Generate ipk
+      - name: Generate ipk or apk
         run: |
           env
           echo ${{ steps.regex-match.outputs.group1 }}
